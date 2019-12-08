@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="abc"></h1>
+  <h1 id="result"></h1>
+  <script>
+  /* task Write a program that writes the current date in the following format.
+  Tue Dec 03 2019 */
+   
+  
+  
+  var date = new Date();
+  var Days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  var current_day = Days[date.getDay()];
+  var Months = ["Jan","Feb","Mar","Apr","May","Jun","jul","Aug","Sep","Oct","Nov","Dec"];
+  var current_month = Months[date.getMonth()];
+
+  var full_date = `${current_day} ${current_month} ${date.getDate()} ${date.getFullYear()}`;
+  console.log(full_date);
+  
+  var pass = false;
+  setTimeout(()=>{
+    pass=true;
+    console.log("workinggggg",pass);
+  },5000)
+
+  if(!pass){
+    document.getElementById("result").innerText= "Uhhh! Your are Failed";
+  }else {
+    document.getElementById("result").innerText = "Congratulations!! You have passed"
+  }
+
+
+  document.getElementById("abc").innerText = full_date;
+  
+  
+  </script>
+</body>
+</html>

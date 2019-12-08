@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  
+  var newVar = 10;                                                 /* global variable this var can be use anywhere */
+
+  function checkScope() {                                          /*local variable  this variable only works for this function*/
+    var newVar = 20;
+    console.log("CONSOLE INSIDE FUNCTION" , newVar)
+
+  }
+
+  checkScope()
+  console.log("CONSOLE OUTSIDE FUNCTION" , newVar);
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
+</body>
+</html>
